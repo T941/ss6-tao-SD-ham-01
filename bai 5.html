@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let star=["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"]
+    let asterism=["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major"," Leo"]
+    let star1=prompt("Enter a star");
+    for (let i=0;i<star.length;i++) {
+    function checkStar() {
+            if (star1==star[i]){
+                return 1;
+            }
+            return 0;
+        }
+
+    if (checkStar()===1){
+        alert(asterism[i])
+    }else {
+        alert("không tìm thấy");
+        break;
+    }
+    }
+</script>
+</body>
+</html>
